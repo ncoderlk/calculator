@@ -1,52 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="author" content="ncoderlk">
+    <link rel="stylesheet" href="./assets/css/master.css">
     <title>Calculator</title>
 </head>
 <body>
-    <table>
-           <tr><td colspan="4"><p id="name"></p></td></tr>
-           <tr>
-               <td colspan="4"><textarea id="txt"></textarea></td>
-           </tr>
-           <tr>
-               <td ><button class="mn" id="btn" value="AC" >AC</button></td>
-               <td><button id="btn" value="%" class="mn">%</button></td>
-               <td><button id="btn" value="C" class="mdn">&#9003;</button></td>
-               <td><button id="btn" value="/" class="mn">&divide;</button></td>
-        
-           </tr>
-           <tr>
-            <td><button id="btn"value="9" class="n">9</button></td>
-            <td><button id="btn"value="8" class="n">8</button></td>
-            <td><button id="btn" value="7" class="n">7</button></td>           
-            <td><button id="btn" value="*" class="mn">&times;</button></td> 
-        
-           </tr>
-           <tr>
-            <td><button id="btn" value="4" class="n">4</button></td>
-            <td><button id="btn" value="5" class="n">5</button></td>
-            <td><button id="btn" value="6" class="n">6</button></td>
-            <td><button id="btn" value="+" class="mn">&plus;</button></td>
-        </tr>
-        <tr>
-            <td><button id="btn" value="1" class="n">1</button></td>
-            <td><button id="btn" value="2" class="n">2</button></td>
-            <td><button id="btn" value="3" class="n">3</button></td>
-            <td><button id="btn" value="-" class="mn">&minus;</button></td> 
-        </tr>
-        <tr>
-            <td colspan="2"><button id="btn" class="spc" value="0">0</button></td>
-            <td><button id="btn" value="." class="n">.</button></td>
-           
-            <td><button id="btn" class="mnn" value="=">&equals;</button></td>
-        
-         </tr>
-    </table>
-    <script src="./script/index.js"></script>
+    <div class="container">
+    <div class="wrapper">
+  <div class="output-sec">
+      <textarea class="prev" id="trt" readonly></textarea>
+      <textarea class="curren"  id="txt" readonly></textarea>
+  </div>
+
+<!--Buttons-->
+<button class="wide-two" id="btn" value="AC" >AC</button>
+<button id="btn" value="C">&#9003;</button>
+<button id="btn" value="/">&divide;</button>
+<button id="btn" value="1">1</button>
+<button id="btn" value="2">2</button>
+<button id="btn" value="3">3</button>
+<button id="btn" value="*">&times;</button>
+<button id="btn" value="4">4</button>
+<button id="btn" value="5">5</button>
+<button id="btn" value="6">6</button>
+<button id="btn" value="+">+</button>
+<button id="btn" value="7">7</button>
+<button id="btn" value="8">8</button>
+<button id="btn" value="9">9</button>
+<button id="btn" value="-">-</button>
+<button id="btn" value=".">.</button>
+<button id="btn" value="0">0</button>
+<button id="btn" class="wide-two" value="=">&equals;</button>
+
+
+
+<!---->
+
+</div>
+</div>
+    <script src="./assets/js/app.js" charset="utf-8" defer></script>
 </body>
 </html>

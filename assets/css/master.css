@@ -1,0 +1,66 @@
+*,*::after,*::before{box-sizing: border-box;
+}
+body{
+
+    margin: 0;
+    background:  linear-gradient(to right, #00AAFF, #00FF6C);
+    padding: 10px;
+}
+.wrapper{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 300px;
+    grid-template-columns: repeat(4,80px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+}
+
+button{
+    background-color:#ffffffbf;
+    font-size: 30px;
+    outline: none;
+    border:1px solid #fff;
+    width: auto;
+    height: auto;
+}
+button:hover{
+    background-color:rgba(255, 255, 255, .9);
+
+}
+.wide-two{
+    grid-column: span 2;
+}
+.output-sec{
+    grid-column: 1/-1;
+    background-color: #252525;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.prev,.prev::after,.prev::before,.prev:focus{
+    color: #e0e0e0bf;
+    font-size: 20px;
+    width: 300px;
+    height: max-content;
+    resize: none;
+    background-color: #252525;
+    border: none;
+}
+.curren,.curren::after,.curren::before,.curren:focus{
+    color: white;
+    font-size: 30px;
+    width: 300px;
+    resize: none;
+    background-color: #252525;
+    border: none;
+}
+.container{
+    background-color: #000;
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+}

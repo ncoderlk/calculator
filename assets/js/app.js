@@ -1,10 +1,4 @@
-const person={
-    header:"Calculator",
-    helpertext:"First Enter The Math You Want To Slove In the Box Then Click On Equals Buttons",
-    madeby:"This Was Created By ncodeerlk",
-}
-document.getElementById('name').innerHTML=("<center>" + person.header +"</center>");
-//Onclick Buttons To One Const
+
 const btn=document.querySelectorAll('button[id="btn"]');
 //input value
 function txtap(str) {
@@ -13,10 +7,12 @@ function txtap(str) {
 }
 //Answer
 function outext() {
+
     var dis = document.getElementById("txt");
     var opt = dis.value;
     var result = eval(opt);
     dis.value = result;
+    document.getElementById('trt').innerHTML=opt
 }
 function btnclear(){
     var dis = document.getElementById("txt");
