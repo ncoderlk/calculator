@@ -3,7 +3,7 @@
 body{
 
     margin: 0;
-    background:  linear-gradient(to right, #00AAFF, #00FF6C);
+    background:  linear-gradient(to right, red,magenta);
     padding: 10px;
 }
 .wrapper{
@@ -16,7 +16,7 @@ body{
 }
 
 button{
-    background-color:#ffffffbf;
+    background-color:#fff;
     font-size: 30px;
     outline: none;
     border:1px solid #fff;
@@ -27,7 +27,10 @@ button:hover{
     background-color:rgba(255, 255, 255, .9);
 
 }
-.wide-two{
+.mp,.mp:hover{
+    background-color: orangered;
+}
+.wide{
     grid-column: span 2;
 }
 .output-sec{
