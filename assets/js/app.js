@@ -1,4 +1,4 @@
-//Button to One Variable
+document.addEventListener("DOMContentLoaded", () => {
 const btn=document.querySelectorAll('button[id="btn"]');
 //input value
 function txtap(str) {
@@ -14,7 +14,7 @@ function outext() {
     dis.value = result;
     document.getElementById('trt').innerHTML=opt
 }
-//Erase Button
+//---------Erase Btn
 function btnclear(){
    
     var dis = document.getElementById("txt");
@@ -42,17 +42,18 @@ function btnclear(){
     }
    
 }
-//All Clear Button
+//------All Clear Button
 function btnaclear(){
 
     location.reload();
     var dis=document.getElementById('txt');
     return dis.value="";
 }
-//Process
+//--------------Process
 for (var i = 0; i < btn.length; i++) {
     btn[i].addEventListener("click", function () {
         bclickh(this);
+       
     });
 }
  function bclickh(btn) {
@@ -73,4 +74,4 @@ for (var i = 0; i < btn.length; i++) {
             break;
     }
 }
-//Developed By NcoderLK
+})
